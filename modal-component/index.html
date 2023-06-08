@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal component</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 2rem;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <uc-modal>
+      <h1 slot="title">Please confirm</h1>
+      <p slot="main-content">
+        With your confirmation, you agree to pay the full amount
+      </p>
+    </uc-modal>
+
+    <p>Please confirm your choice</p>
+    <button id="confirm-btn">Confirm</button>
+
+    <script src="modal.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
