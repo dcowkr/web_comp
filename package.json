@@ -1,0 +1,22 @@
+{
+  "name": "web_comp",
+  "version": "1.0.0",
+  "description": "Testing Web Components",
+  "main": "modal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcowkr/web_comp.git"
+  },
+  "keywords": [
+    "WBC"
+  ],
+  "author": "Daniel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcowkr/web_comp/issues"
+  },
+  "homepage": "https://github.com/dcowkr/web_comp#readme"
+}
