@@ -1,22 +1,32 @@
 {
-  "name": "testing_web_comp",
-  "version": "1.0.0",
-  "description": "Testing Web Components",
-  "main": "modal.js",
+  "name": "my-component",
+  "version": "0.0.1",
+  "description": "Stencil Component Starter",
+  "module": "dist/esm/index.js",
+  "main": "dist/index.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@stencil/core": "~0.15.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dcowkr/web_comp.git"
+    "url": "git+https://github.com/ionic-team/stencil-component-starter.git"
   },
-  "keywords": [
-    "WBC"
-  ],
-  "author": "Daniel",
-  "license": "ISC",
+  "author": "Ionic Team",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dcowkr/web_comp/issues"
+    "url": "https://github.com/ionic-team/stencil"
   },
-  "homepage": "https://github.com/dcowkr/web_comp#readme"
+  "homepage": "https://github.com/ionic-team/stencil"
 }
