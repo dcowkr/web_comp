@@ -23,17 +23,22 @@ export namespace Components {
   interface UcStockPriceAttributes extends StencilHTMLAttributes {
     'stockSymbol'?: string;
   }
+
+  interface ZendeskWidget {}
+  interface ZendeskWidgetAttributes extends StencilHTMLAttributes {}
 }
 
 declare global {
   interface StencilElementInterfaces {
     'UcStockFinder': Components.UcStockFinder;
     'UcStockPrice': Components.UcStockPrice;
+    'ZendeskWidget': Components.ZendeskWidget;
   }
 
   interface StencilIntrinsicElements {
     'uc-stock-finder': Components.UcStockFinderAttributes;
     'uc-stock-price': Components.UcStockPriceAttributes;
+    'zendesk-widget': Components.ZendeskWidgetAttributes;
   }
 
 
@@ -49,14 +54,22 @@ declare global {
     new (): HTMLUcStockPriceElement;
   };
 
+  interface HTMLZendeskWidgetElement extends Components.ZendeskWidget, HTMLStencilElement {}
+  var HTMLZendeskWidgetElement: {
+    prototype: HTMLZendeskWidgetElement;
+    new (): HTMLZendeskWidgetElement;
+  };
+
   interface HTMLElementTagNameMap {
     'uc-stock-finder': HTMLUcStockFinderElement
     'uc-stock-price': HTMLUcStockPriceElement
+    'zendesk-widget': HTMLZendeskWidgetElement
   }
 
   interface ElementTagNameMap {
     'uc-stock-finder': HTMLUcStockFinderElement;
     'uc-stock-price': HTMLUcStockPriceElement;
+    'zendesk-widget': HTMLZendeskWidgetElement;
   }
 
 

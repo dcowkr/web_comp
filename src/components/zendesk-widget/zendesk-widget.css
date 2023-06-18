@@ -1,0 +1,10 @@
+button {
+    background-color: #041e42;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+div[role="presentation"] {
+    border: 5px solid red !important;
+}
